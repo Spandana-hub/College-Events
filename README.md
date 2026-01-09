@@ -16,7 +16,7 @@ A web application built for managing and showcasing college events.
 - Firebase Hosting & Firestore
 
 ## 🌐 Live Demo
-👉 <https://6961724aa2536d0afd839374--collegeeventmanagementsys.netlify.app/>
+👉 https://collegeeventmanagementsys.netlify.app/
 
 ## 📁 Project Setup
 1. Clone the repository
