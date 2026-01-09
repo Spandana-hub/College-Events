@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bgg-image"></div>
+    <header class="navbar">
+        <div class="logo-area">
+            <span class="logo">Campus Connect</span>
+        </div>
+        <div class="nav-actions">
+             <button id="host-btn" class="btn-host" style="display: none;" onclick="openPostForm()">+ Post Event</button>
+            <button class="btn-outline" onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <main class="content">
+        <div class="feed-header">
+            <h2 id="welcome-msg">Wanna host an event?</h2>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search events..." onkeyup="filterEvents()">
+        </div>
+
+        <div id="event-grid" class="event-grid">
+            </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

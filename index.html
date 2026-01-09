@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-body">
+    <div class="bg-image"></div>
+    <section id="auth-screen" class="split-layout">
+        <div class="welcome-section">
+            <h1 style="color:rgb(241, 245, 11)">Welcome to <span style="color:antiquewhite">Campus Connect</span></h1>
+            <p>Stay updated on events, workshops, and club activities.</p>
+        </div>
+
+        <div class="form-section">
+            <div class="glass-card">
+                <div id="login-container">
+                    <h2>Sign In</h2>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="College Email" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <button id="login-btn" class="btn-primary" onclick="login()">Sign In</button>
+                    <p class="toggle-text" onclick="toggleAuth()">
+                        New student? <b>Create account</b>
+                    </p>
+                </div>
+
+                <div id="signup-container" style="display: none;">
+                    <h2>Create Account</h2>
+                    <div class="input-group">
+                        <input type="email" id="signup-email" placeholder="Enter College Email" required>
+                        <input type="password" id="signup-password" placeholder="Create Password" required>
+                    </div>
+                    <button id="signup-btn" class="btn-primary" onclick="signUp()" style="background: var(--success);">Register</button>
+                    <p class="toggle-text" onclick="toggleAuth()">
+                        Already a member? <b>Sign In</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
